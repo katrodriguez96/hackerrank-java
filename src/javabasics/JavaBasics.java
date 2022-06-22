@@ -31,4 +31,15 @@ public class JavaBasics {
             System.out.println("Not Weird");
         }
     }
+
+    public void scanner2() {
+        // Java Stdin and Stdout II
+        Scanner scanner = new Scanner(System.in);
+        int myInt = Integer.parseInt(scanner.nextLine());
+        double myDbl = Double.parseDouble(scanner.nextLine());
+        String myString = scanner.nextLine();
+        System.out.println("String: " + myString);
+        System.out.println("Double: " + myDbl);
+        System.out.println("Int: " + myInt);
+    }
 }
