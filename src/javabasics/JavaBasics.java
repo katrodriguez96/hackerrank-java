@@ -64,4 +64,17 @@ public class JavaBasics {
         System.out.printf("%-15s%03d%n", s3, int3);
         System.out.println("================================");
     }
+
+    public void loops1() throws IOException {
+        // Java Loops I
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+
+        bufferedReader.close();
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(N + " x " + i + " = " + N*i);
+        }
+    }
 }
