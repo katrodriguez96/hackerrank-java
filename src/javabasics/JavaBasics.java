@@ -42,4 +42,26 @@ public class JavaBasics {
         System.out.println("Double: " + myDbl);
         System.out.println("Int: " + myInt);
     }
+
+    public void formatting() {
+        // Java Output Formatting
+        Scanner scanner = new Scanner(System.in);
+        String string1 = scanner.nextLine();
+        String string2 = scanner.nextLine();
+        String string3 = scanner.nextLine();
+        String [] arr1 = string1.split(" ");
+        String [] arr2 = string2.split(" ");
+        String [] arr3 = string3.split(" ");
+        String s1 = arr1[0];
+        String s2 = arr2[0];
+        String s3 = arr3[0];
+        int int1 = Integer.parseInt(arr1[1]);
+        int int2 = Integer.parseInt(arr2[1]);
+        int int3 = Integer.parseInt(arr3[1]);
+        System.out.println("================================");
+        System.out.printf("%-15s%03d%n", s1, int1);
+        System.out.printf("%-15s%03d%n", s2, int2);
+        System.out.printf("%-15s%03d%n", s3, int3);
+        System.out.println("================================");
+    }
 }
